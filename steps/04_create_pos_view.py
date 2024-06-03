@@ -14,6 +14,19 @@ from snowflake.snowpark import Session
 #import snowflake.snowpark.types as T
 import snowflake.snowpark.functions as F
 
+connection_parameters = {
+    "account": "sb77104.ca-central-1.aws",
+    "user": "MILTONQ",
+    "password": "MQ2023.ec3",
+    "role": "HOL_ROLE",
+    "warehouse": "HOL_WH",
+    "database": "HOL_DB",
+    "schema": "ANALYTICS"
+}
+
+session = Session.builder.configs(connection_parameters).create()
+print("Session created successfully!")
+
 
 def create_pos_view(session):
     session.use_schema('HARMONIZED')

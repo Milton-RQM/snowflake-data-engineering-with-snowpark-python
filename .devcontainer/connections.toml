@@ -1,10 +1,17 @@
 # Can override the default connection name with an environment variable as follows
-#export SNOWFLAKE_DEFAULT_CONNECTION_NAME="default"
+export SNOWFLAKE_ACCOUNT="sb77104.ca-central-1.aws"
+export SNOWFLAKE_USER="MILTONQ"
+export SNOWFLAKE_PASSWORD="MQ2023.ec3"
+export SNOWFLAKE_ROLE="HOL_ROLE"
+export SNOWFLAKE_WAREHOUSE="HOL_WH"
+export SNOWFLAKE_DATABASE="HOL_DB"
+export SNOWFLAKE_SCHEMA="ANALYTICS"
+export SNOWFLAKE_DEFAULT_CONNECTION_NAME="my_conn"
 
-[default]
-account = "myaccount"
-user = "myuser"
-password = "mypassword"
+[my_conn]
+account = "sb77104.ca-central-1.aws"
+user = "MILTONQ"
+password = "MQ2023.ec3"
 role = "HOL_ROLE"
 warehouse = "HOL_WH"
 database = "HOL_DB"

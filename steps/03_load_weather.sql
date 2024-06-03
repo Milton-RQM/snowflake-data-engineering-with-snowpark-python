@@ -12,7 +12,6 @@ Last Updated: 1/9/2023
 USE ROLE HOL_ROLE;
 USE WAREHOUSE HOL_WH;
 
-
 -- ----------------------------------------------------------------------------
 -- Step #1: Connect to weather data in Marketplace
 -- ----------------------------------------------------------------------------
@@ -54,6 +53,7 @@ CREATE OR REPLACE DATABASE FROSTBYTE_WEATHERSOURCE
 
 GRANT IMPORTED PRIVILEGES ON DATABASE FROSTBYTE_WEATHERSOURCE TO ROLE HOL_ROLE;
 ---*/
+
 
 
 -- Let's look at the data - same 3-part naming convention as any other table
